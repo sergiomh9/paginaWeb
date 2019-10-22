@@ -1,0 +1,481 @@
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans|Open+Sans&display=swap');
+
+html, body{
+  margin: 0;
+}
+
+body{
+    background:white;   
+    width: 100%;
+    height: 100%;
+}
+
+
+.home{
+  width: 100%;
+ height: 100vh;
+}
+
+#fondoV{ 
+    
+  margin: 0;
+  position: absolute; 
+  bottom: 0px; 
+	right: 0px; 
+  min-width: 100%; 
+	min-height:100% ; 
+	width: auto; 
+
+	z-index: -1000;
+}
+
+.capaOscura{
+  background: hsla(0, 0%, 0%, .4);
+  margin: 0;
+  position: absolute; 
+  bottom: 0px; 
+	right: 0px; 
+  min-width: 100%; 
+	min-height:100% ; 
+	width: auto; 
+
+	z-index: -100;
+}
+.logo img{
+  text-align: center;
+  width: 40%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  
+}
+
+
+h2{
+    position: absolute;
+    margin-top: 3%;
+    margin-left: 10%;
+    color: white;
+    font-size: 30px;
+    letter-spacing: 20px;
+    font-weight:100;
+}
+
+
+
+ /*----------MENU-----------*/
+
+.menu{ 
+  height:80px; 
+  width:100%; 
+  color:white; 
+  text-align:center;  
+  z-index: 1000;
+  margin-top: 0px;
+  margin-top: 0;
+  text-align: center;
+}
+nav {
+ 
+  width: 100%;
+  /* Desplazamos el nav hacia la izquierda */
+   
+}
+.logoM{
+  float: left;
+}
+.logoM img{
+  width: 150px;
+}
+
+.fixed{
+  position:fixed;
+  top:0;
+  background: hsla(0, 0%, 0%, .99);
+  height: 70px;
+
+} 
+
+nav ul {
+  margin-right: 5%;
+  float: right;
+  list-style: none;
+  overflow: hidden; /* Limpiamos errores de float */
+  margin-top: 40px;
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight:100;
+  font-size: 1.4em;
+}
+ 
+nav ul li {
+  text-align: center;
+  float: left;
+
+
+}
+ 
+nav ul li a {
+  text-align: center;
+  margin-left: 10px;
+  margin-right: 20PX;
+  display: block; /* Convertimos los elementos a en elementos bloque para manipular el padding */
+  padding: 20px;
+  color: #fff;
+  text-decoration: none;
+  
+}
+ 
+
+
+
+/*---------Nosotros------------*/
+.nosotros{
+    background: white;
+    margin-top:0;
+   width: 100%;
+   height: 100%;
+}
+
+.nosotros h1{
+  margin: 70px 0 10px 0;
+  text-align: center;
+  color: black;
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight:300 ;
+  font-size: 3em;
+}
+#linea1{
+  border-top: 1px solid red;
+  width: 150px;
+  margin-bottom: 40px;
+}
+.nosotros p{
+  margin: 60px 25% 70px 25%;
+  font-family: 'Open Sans', sans-serif;
+  font-weight:lighter ;
+  font-size: 1.1em;
+  
+}
+
+
+.galeriaNosotros{
+  width: 100%;
+  height: 100%;
+    
+}
+
+.foto1GN{
+  background:url(img/cuadrado6.jpg) ;     
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  float: left;
+  margin-right: 4%;
+   /* height:0; */
+  width:22%;
+  padding-top:22%;
+}
+.foto2GN{
+  background:url(img/cuadrada2.jpg) ;  
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  float: left;
+  margin-right: 4%;
+   /* height:0; */
+  width:22%;
+  padding-top:22%;
+  margin-top: 50px;  
+  
+}
+.foto3GN{
+  background:url(img/cuadrada1.jpg) ;  
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  float: left;
+  margin-right: 4%;
+   /* height:0; */
+  width:22%;
+  padding-top:22%;   
+  margin-top: 40px;  
+}
+.foto4GN{
+  background:url(img/cuadrada4.png) ;  
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  float: right;
+
+   /* height:0; */
+  width:22%;
+  padding-top:22%;   
+  margin-right: 0;
+  margin-top: 60px;  
+}
+
+
+.medallas{
+  width: 100%;
+  height: 100%;
+    margin-top: 50px;
+    float: left;
+    margin-bottom: 50px;
+}
+.foto1M{
+  background:url(img/winner.png) ;  
+  opacity: .7;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  float: left;
+  margin-left: 39.5%;
+   /* height:0; */
+  width:8%;
+  padding-top:8%;   
+  margin-right: 0;
+  margin-top: 60px;  
+}
+.foto2M{
+  background:url(img/tripadvisor.png) ;  
+  opacity: .7;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  float: left;
+  margin-left: 5%;
+   /* height:0; */
+  width:8%;
+  padding-top:8%;   
+  margin-right: 0;
+  margin-top: 60px;  
+}
+
+
+
+
+
+
+
+/*---------LUGAR------------*/
+
+.lugar{
+    background: rgb(15, 14, 19);
+    width: 100%;
+    margin: 0px;
+   
+    float: left;
+   }
+.imagenLugar{
+  width: 100%;
+  height: 100%;
+
+}
+.foto1L{
+  background:url(img/asian-LugarImagen.jpg) ;  
+
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  float: left;
+  margin-left: 0;
+   /* height:0; */
+  width:50%;
+  padding-top:40%;   
+  margin-right: 0;
+}
+.lugarText{
+  width: 50%;
+  min-width: 20%;
+  float: left;
+  margin-top: 5% ;
+}
+.lugar h1{
+  text-align: center;
+  color: white;
+  margin-top: 70px;
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight:300 ;
+  font-size: 3em;
+}
+
+.lugar p{
+  margin:0 20% 50px 20%;
+  color: white;
+
+  font-family: 'Open Sans', sans-serif;
+  font-weight:lighter ;
+  font-size: 1.1em;
+
+}
+.lugar h4{
+  color: white;
+  margin: 50px 0 50px 0;
+  text-align: center;
+}
+
+.lugar img{
+  display: block;
+  margin: 0 auto;
+  width: 20%;
+}
+
+/*---------Calidad------------*/
+
+.calidad{
+  background: rgb(15, 14, 19);
+  width: 100%;
+  margin: 0px;
+  height: 540px;
+  float: left;
+ }
+
+.calidad h1{
+  color: white;
+  text-align: center;
+  margin: 60px 0 60px 0;
+
+}
+
+.calidadText1{
+  width: 50%;
+  margin: 0;
+  float: left;
+}
+
+.calidadText2{
+  width: 50%;
+  margin: 0;
+  float: left;
+  margin-bottom: 60px;
+}
+.calidad p{
+  float: left;
+  color: white;
+  margin: 20px 20% 20px 20% ;
+}
+
+
+.galeriacalidad{
+  width: 100%;
+  height: 100%;
+    
+}
+
+.foto1C{
+  background:url(img/cuadrad7.jpg) ;     
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  float: left;
+  margin-right: 4%;
+   /* height:0; */
+  width:22%;
+  padding-top:22%;
+  
+}
+.foto2C{
+  background:url(img/cuadrad3.jpg) ;  
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  float: left;
+  margin-right: 4%;
+   /* height:0; */
+  width:22%;
+  padding-top:22%;
+  margin-top: 50px;  
+  
+}
+.foto3C{
+  background:url(img/cuadrad8.jpg) ;  
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  float: left;
+  margin-right: 4%;
+   /* height:0; */
+  width:22%;
+  padding-top:22%;   
+  margin-top: 40px;  
+}
+.foto4C{
+  background:url(img/cuadrada6.jpg) ;  
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  float: right;
+
+   /* height:0; */
+  width:22%;
+  padding-top:22%;   
+  margin-right: 0;
+  margin-top: 60px;  
+}
+
+/*---------Reseña------------*/
+
+.reseñas{
+  width: 100%;
+  margin: 0px;
+  float: left;
+  margin-top: 16%;
+ }
+
+.reseñas h1{
+
+  text-align: center;
+  margin: 60px 0 60px 0;
+
+}
+
+.reseñaText1{
+  width: 50%;
+  margin: 0;
+  float: left;
+}
+.reseñas p{
+  margin: 20px 20% 20px 20% ;
+}
+
+.reseñas h3{
+  margin: 20px 20% 20px 20% ;
+ 
+}
+.reseñaText2{
+  width: 50%;
+  margin: 0;
+  float: left;
+  margin-bottom: 60px;
+}
+
+
+
+
+
+
+
+
+
+    .fuenteMenu{
+      font-family: 'Josefin Sans', sans-serif;
+  font-weight:100;
+  font-size: 0.9em;
+  margin-top: 10px;
+    }
+    .desaparecer{
+      display: none;
+    }
+          
+/*
+   position:relative;
+    margin: 0;
+    bottom: 0px;
+     object-fit: cover;
+	min-width: 100%; 
+	min-height:100vh ;
+     object-fit: cover;
+     
+    z-index: -1000;*/
+/*---------------------*/
